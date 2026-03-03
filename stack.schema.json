@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StackSpec",
+  "type": "object",
+  "required": ["project", "buckets"],
+  "properties": {
+    "project": {
+      "type": "object",
+      "required": ["name", "repoTopology"],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "repoTopology": {
+          "type": "object",
+          "required": ["mode"],
+          "properties": {
+            "mode": { "type": "string", "enum": ["mono", "multi"] },
+            "tooling": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "buckets": {
+      "type": "object",
+      "required": ["frontend", "backend", "database", "cache", "ciCd", "deployment"],
+      "properties": {
+        "frontend": { "$ref": "#/$defs/bucketSpec" },
+        "backend": { "$ref": "#/$defs/bucketSpec" },
+        "database": { "$ref": "#/$defs/bucketSpec" },
+        "cache": { "$ref": "#/$defs/bucketSpec" },
+        "ciCd": { "$ref": "#/$defs/bucketSpec" },
+        "deployment": { "$ref": "#/$defs/bucketSpec" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "bucketSpec": {
+      "type": "object",
+      "required": ["primary", "secondary"],
+      "properties": {
+        "primary": { "type": ["string", "null"] },
+        "secondary": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": true
+}

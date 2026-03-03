@@ -1,0 +1,32 @@
+{
+  "nomenclatureVersion": "1.0",
+  "buckets": ["frontend", "backend", "database", "cache", "ciCd", "deployment"],
+  "architectureSections": [
+    "overview",
+    "architecturePrinciples",
+    "stack",
+    "repoTopology",
+    "appStructure",
+    "dataFlow",
+    "testingQuality",
+    "cicd",
+    "deployment",
+    "securityCompliance",
+    "observability",
+    "performance",
+    "conventions",
+    "deliveryWorkflow",
+    "migrationEvolution"
+  ],
+  "agents": ["orchestrator", "architect", "engineer", "quality-engineer", "platform-engineer"],
+  "phases": ["DESIGN", "IMPLEMENTATION", "QUALITY", "DELIVERY"],
+  "ownership": {
+    "overview": { "stage": 3, "source": "claude.md", "note": "But produit, périmètre, non-objectifs (maintenu étape 3)" },
+    "deployment": { "stage": 3, "source": "ARCHITECTURE.md", "note": "Cibles, infra, env vars (mise à jour étape 3)" },
+    "observability": { "stage": 3, "source": "ARCHITECTURE.md", "note": "Logs/metrics/traces/errors (mise à jour étape 3)" },
+    "deliveryWorkflow": { "stage": 3, "source": "ARCHITECTURE.md", "note": "Agents/phases/commandes (mise à jour étape 3)" },
+    "migrationEvolution": { "stage": 3, "source": "ARCHITECTURE.md", "note": "Roadmap technique (mise à jour étape 3)" },
+    "performance": { "stage": "1+3", "source": "ARCHITECTURE.md", "note": "Budgets & optimisations (base étape 1, raffinement étape 3)" },
+    "conventions": { "stage": "1+3", "source": "ARCHITECTURE.md", "note": "Naming, style, lint/format (base étape 1, raffinement étape 3)" }
+  }
+}

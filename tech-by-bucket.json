@@ -1,0 +1,58 @@
+{
+  "frontend": [
+    { "id": "react-native", "label": "React Native", "priority": 100, "patterns": ["\\breact\\s*native\\b", "\\breact-native\\b"] },
+    { "id": "react", "label": "React", "priority": 80, "patterns": ["\\breact\\b"] },
+    { "id": "vue", "label": "Vue", "priority": 70, "patterns": ["\\bvue\\b", "\\bvue\\s*3\\b"] },
+    { "id": "angular", "label": "Angular", "priority": 60, "patterns": ["\\bangular\\b"] },
+    { "id": "next", "label": "Next.js", "priority": 60, "patterns": ["\\bnext\\b", "\\bnext\\.js\\b"] },
+    { "id": "flutter", "label": "Flutter", "priority": 50, "patterns": ["\\bflutter\\b"] },
+    { "id": "typescript", "label": "TypeScript", "priority": 40, "patterns": ["\\btypescript\\b"] },
+    { "id": "swift", "label": "Swift", "priority": 40, "patterns": ["\\bswift\\b"] },
+    { "id": "kotlin", "label": "Kotlin", "priority": 40, "patterns": ["\\bkotlin\\b"] },
+    { "id": "carplay", "label": "CarPlay", "priority": 35, "patterns": ["\\bcarplay\\b"] },
+    { "id": "android-auto", "label": "Android Auto", "priority": 35, "patterns": ["\\bandroid\\s*auto\\b"] }
+  ],
+  "backend": [
+    { "id": "azure-functions", "label": "Azure Functions", "priority": 95, "patterns": ["\\bazure\\s*functions?\\b"] },
+    { "id": "dotnet10", "label": ".NET 10", "priority": 90, "patterns": ["\\b\\.net\\s*10\\b", "\\bdotnet\\s*10\\b", "\\bdot\\s*net\\s*10\\b"] },
+    { "id": "dotnet9", "label": ".NET 9", "priority": 89, "patterns": ["\\b\\.net\\s*9\\b", "\\bdotnet\\s*9\\b", "\\bdot\\s*net\\s*9\\b"] },
+    { "id": "dotnet8", "label": ".NET 8", "priority": 88, "patterns": ["\\b\\.net\\s*8\\b", "\\bdotnet\\s*8\\b", "\\bdot\\s*net\\s*8\\b"] },
+    { "id": "aspnet-core", "label": "ASP.NET Core", "priority": 85, "patterns": ["\\basp\\\.net\\s*core\\b", "\\baspnet\\s*core\\b"] },
+    { "id": "dotnet", "label": ".NET", "priority": 80, "patterns": ["\\b\\.net\\b", "\\bdotnet\\b", "\\bdot\\s*net\\b", "\\bc#\\b"] },
+    { "id": "nestjs", "label": "NestJS", "priority": 70, "patterns": ["\\bnestjs\\b", "\\bnest\\b"] },
+    { "id": "spring", "label": "Spring Boot", "priority": 70, "patterns": ["\\bspring\\s*boot\\b", "\\bspring\\b"] },
+    { "id": "fastapi", "label": "FastAPI", "priority": 65, "patterns": ["\\bfastapi\\b"] },
+    { "id": "django", "label": "Django", "priority": 60, "patterns": ["\\bdjango\\b"] },
+    { "id": "go", "label": "Go", "priority": 55, "patterns": ["\\bgo\\b", "\\bgolang\\b"] }
+  ],
+  "database": [
+    { "id": "postgresql", "label": "PostgreSQL", "priority": 80, "patterns": ["\\bpostgres(?:ql)?\\b"] },
+    { "id": "mysql", "label": "MySQL", "priority": 70, "patterns": ["\\bmysql\\b"] },
+    { "id": "mongodb", "label": "MongoDB", "priority": 70, "patterns": ["\\bmongo(?:db)?\\b"] },
+    { "id": "sqlserver", "label": "SQL Server", "priority": 70, "patterns": ["\\bsql\\s*server\\b"] },
+    { "id": "sqlite", "label": "SQLite", "priority": 60, "patterns": ["\\bsqlite\\b"] }
+  ],
+  "cache": [
+    { "id": "azure-cache-redis", "label": "Azure Cache for Redis", "priority": 90, "patterns": ["\\bazure\\s*cache\\s*for\\s*redis\\b"] },
+    { "id": "redis", "label": "Redis", "priority": 70, "patterns": ["\\bredis\\b"] },
+    { "id": "memcached", "label": "Memcached", "priority": 60, "patterns": ["\\bmemcached\\b"] }
+  ],
+  "ciCd": [
+    { "id": "github-actions", "label": "GitHub Actions", "priority": 80, "patterns": ["\\bgithub\\s*actions\\b"] },
+    { "id": "gitlab-ci", "label": "GitLab CI", "priority": 75, "patterns": ["\\bgitlab\\s*ci\\b", "\\bgitlab\\b"] },
+    { "id": "azure-devops", "label": "Azure DevOps", "priority": 75, "patterns": ["\\bazure\\s*devops\\b"] },
+    { "id": "jenkins", "label": "Jenkins", "priority": 60, "patterns": ["\\bjenkins\\b"] }
+  ],
+  "deployment": [
+    { "id": "api-management", "label": "API Management", "priority": 80, "patterns": ["\\bapi\\s*management\\b", "\\bapim\\b"] },
+    { "id": "azure-storage", "label": "Azure Storage", "priority": 78, "patterns": ["\\bazure\\s*storage\\b"] },
+    { "id": "azure-container-apps", "label": "Azure Container Apps", "priority": 77, "patterns": ["\\bazure\\s*container\\s*apps\\b"] },
+    { "id": "azure-functions", "label": "Azure Functions", "priority": 75, "patterns": ["\\bazure\\s*functions?\\b"] },
+    { "id": "azure", "label": "Azure", "priority": 70, "patterns": ["\\bazure\\b"] },
+    { "id": "aws", "label": "AWS", "priority": 70, "patterns": ["\\baws\\b", "\\bamazon\\s*web\\s*services\\b"] },
+    { "id": "gcp", "label": "GCP", "priority": 70, "patterns": ["\\bgcp\\b", "\\bgoogle\\s*cloud\\b"] },
+    { "id": "vercel", "label": "Vercel", "priority": 60, "patterns": ["\\bvercel\\b"] },
+    { "id": "netlify", "label": "Netlify", "priority": 60, "patterns": ["\\bnetlify\\b"] },
+    { "id": "docker", "label": "Docker", "priority": 60, "patterns": ["\\bdocker\\b"] }
+  ]
+}

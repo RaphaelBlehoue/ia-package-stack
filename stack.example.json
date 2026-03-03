@@ -1,0 +1,15 @@
+{
+  "project": {
+    "name": "my-project",
+    "type": "webapp",
+    "repoTopology": { "mode": "mono", "tooling": ["pnpm-workspaces"] }
+  },
+  "buckets": {
+    "frontend": { "primary": "next", "secondary": ["react", "typescript"], "notes": "" },
+    "backend": { "primary": "dotnet8", "secondary": ["aspnet-core"], "notes": "" },
+    "database": { "primary": "postgresql", "secondary": [], "notes": "" },
+    "cache": { "primary": "redis", "secondary": [], "notes": "" },
+    "ciCd": { "primary": "github-actions", "secondary": [], "notes": "" },
+    "deployment": { "primary": "azure", "secondary": ["docker"], "notes": "" }
+  }
+}
